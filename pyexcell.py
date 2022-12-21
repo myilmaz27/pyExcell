@@ -1,7 +1,6 @@
 
-
-from openpyxl import Workbook,load_workbook
 import tkinter as tk
+from openpyxl import Workbook,load_workbook
 from tkinter import *
 from tkinter import filedialog
 from tkinter.filedialog import askopenfile
@@ -18,7 +17,7 @@ wb = load_workbook(filename) # wb is Workbook
 ws = wb.active   #ws is active sheet in workbook
 ws2 = wb["sheetname"]  # you can create a new workksheet variable by sheet name
 
-# Aktif çalışma sayfasının adını yazdırma
+
 # print(wb.sheetnames)      # ['sheet1', 'sheet2', ... ]>
 
 #print(ws)   # <Worksheet "ws sheetname">
