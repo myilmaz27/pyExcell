@@ -7,9 +7,10 @@ from tkinter.filedialog import askopenfile
 import os
 
 #get excell file with filedialog of tkinter
+#you can change initial directory, and filedialog title.
 
 filename = filedialog.askopenfilename(initialdir="C:/", title="Select file",
-                                     filetypes=(("excell files", "*.xl*"), ("all files", "*.*")))
+                                     filetypes=(("Excel", "*.xls*"), ("All files", "*.*")))
                                           
 print(filename) # check filename
 
@@ -18,8 +19,7 @@ ws = wb.active   #ws is active sheet in workbook
 ws2 = wb["sheetname"]  # you can create a new workksheet variable by sheet name
 
 
-# print(wb.sheetnames)      # ['sheet1', 'sheet2', ... ]>
-
+#print(wb.sheetnames)      # ['sheet1', 'sheet2', ... ]>
 #print(ws)   # <Worksheet "ws sheetname">
 
 #get single cell value by cell name
